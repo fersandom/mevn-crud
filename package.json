@@ -1,0 +1,39 @@
+{
+  "name": "mevn-crud",
+  "version": "1.0.0",
+  "description": "Simple CRUD with mevn stack",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js --ignore 'client/'",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fersandom/mevn-crud.git"
+  },
+  "keywords": [
+    "MEVN",
+    "CRUD",
+    "VueJs"
+  ],
+  "author": "Ferran Sánchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fersandom/mevn-crud/issues"
+  },
+  "homepage": "https://github.com/fersandom/mevn-crud#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.1",
+    "morgan": "^1.10.0",
+    "uniqid": "^5.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
